@@ -39,7 +39,7 @@
         e.preventDefault();
         const instruction = $("#instruction").val();
         const message = $("#message").val();
-        const url = "path/to/your/php/script.php?instruction=" + encodeURIComponent(instruction) + "&message=" + encodeURIComponent(message);
+        const url = "gpt.php?instruction=" + encodeURIComponent(instruction) + "&message=" + encodeURIComponent(message);
         
         $.getJSON(url, function (data) {
             if (data.error) {
